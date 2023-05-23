@@ -46,3 +46,15 @@
     color: inherit;
     cursor: pointer;
 }
+
+@media (max-width: 767px) {
+    .d-inline-flex.flex-wrap .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .btn-text {
+        font-size: 3rem;
+    }
+}
