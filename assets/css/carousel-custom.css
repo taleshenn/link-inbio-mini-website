@@ -1,47 +1,34 @@
-/* Estilos para carrossel em dispositivos móveis */
-@media (max-width: 767px) {
-    .carousel {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        /* Define a altura máxima vertical */
-        overflow: hidden;
-        /* Oculta o overflow */
-    }
-
-    .carousel-inner {
-        height: 100%;
-        /* Define a altura do conteúdo do carrossel como 100% */
-        white-space: nowrap;
-        /* Impede a quebra de linha */
-        overflow-x: auto;
-        /* Habilita a rolagem horizontal */
-        scroll-snap-type: x mandatory;
-        /* Torna cada item um ponto de rolagem */
-    }
-
-    .carousel-item {
-        display: inline-block;
-        /* Exibe os itens em linha */
-        width: 100%;
-        /* Define a largura do item como 100% */
-        height: 100%;
-        /* Define a altura do item como 100% */
-        scroll-snap-align: center;
-        /* Alinha o item ao centro */
-    }
-
-    .carousel-item img {
-        object-fit: cover;
-        /* Ajusta o tamanho da imagem para preencher o container */
-        height: 100%;
-        /* Define a altura da imagem como 100% */
-        width: 100%;
-        /* Define a largura da imagem como 100% */
-    }
+.carousel-inner {
+    height: 100%;
+    /* Define a altura do conteúdo do carrossel como 100% */
+    white-space: nowrap;
+    /* Impede a quebra de linha */
+    overflow-x: auto;
+    /* Habilita a rolagem horizontal */
+    scroll-snap-type: x mandatory;
+    /* Torna cada item um ponto de rolagem */
 }
+
+.carousel-item {
+    display: inline-block;
+    /* Exibe os itens em linha */
+    width: 100%;
+    /* Define a largura do item como 100% */
+    height: 100%;
+    /* Define a altura do item como 100% */
+    scroll-snap-align: center;
+    /* Alinha o item ao centro */
+}
+
+.carousel-item img {
+    object-fit: cover;
+    /* Ajusta o tamanho da imagem para preencher o container */
+    height: 100%;
+    /* Define a altura da imagem como 100% */
+    width: 100%;
+    /* Define a largura da imagem como 100% */
+}
+
 
 .carousel-caption .arrow-icon {
     animation: bounce 2s infinite;

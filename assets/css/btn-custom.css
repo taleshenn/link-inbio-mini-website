@@ -1,3 +1,5 @@
+@import url(variables.css);
+
 .btn {
     position: relative;
     display: inline-block;
@@ -22,6 +24,9 @@
 }
 
 .btn-text {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -30,10 +35,14 @@
     padding: 10px;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 767px) {
-    .d-inline-flex.flex-wrap .btn {
-        width: 100%;
-    }
+.scroll-button {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    cursor: pointer;
 }

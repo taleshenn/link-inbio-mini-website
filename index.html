@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/btn-custom.css">
     <link rel="stylesheet" href="assets/css/app-main.css">
     <link rel="stylesheet" href="assets/css/texts.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
 </head>
 
 <body>
@@ -82,8 +83,12 @@
 
         <div class="carousel-caption">
             <div class="arrow-icon">
-                <i class="fas fa-chevron-down"></i>
+                <button class="scroll-button"
+                    onclick="window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
             </div>
+
             <h1 id="retoucher">retoucher</h1>
             <h1 id="photo">photo</h1>
         </div>
@@ -98,19 +103,19 @@
             <div class="btn col-12 col-md-4">
                 <div class="btn-content">
                     <img src="assets/images/beauty.jpg" class="card-img" alt="...">
-                    <span class="btn-text">Texto do botão 1</span>
+                    <span class="btn-text">Beauty</span>
                 </div>
             </div>
             <div class="btn col-12 col-md-4">
                 <div class="btn-content">
                     <img src="assets/images/comercial.jpg" class="card-img" alt="...">
-                    <span class="btn-text">Texto do botão 2</span>
+                    <span class="btn-text">Comercial</span>
                 </div>
             </div>
             <div class="btn col-12 col-md-4">
                 <div class="btn-content">
                     <img src="assets/images/diversos.jpg" class="card-img" alt="...">
-                    <span class="btn-text">Texto do botão 3</span>
+                    <span class="btn-text">Diversos</span>
                 </div>
             </div>
         </div>

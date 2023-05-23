@@ -30,7 +30,7 @@
 
 .carousel-caption {
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -67,6 +67,6 @@
     color: var(--off-white);
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 100%;
-    left: 50%;
+    top: 105%;
+    left: 45%;
 }
