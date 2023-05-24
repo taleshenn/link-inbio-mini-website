@@ -1,5 +1,10 @@
 @import url(variables.css);
 
+* {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
 .infoText {
     display: flex;
     flex-direction: column;
@@ -30,7 +35,7 @@
 
 .carousel-caption {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -56,7 +61,7 @@
     text-transform: uppercase;
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 95%;
+    top: 100%;
     left: 50%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 
@@ -67,6 +72,6 @@
     color: var(--off-white);
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 105%;
+    top: 100%;
     left: 50%;
 }
