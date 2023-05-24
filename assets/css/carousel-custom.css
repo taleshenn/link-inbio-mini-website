@@ -23,8 +23,6 @@
     }
 
     .carousel-item {
-        display: inline-block;
-        /* Exibe os itens em linha */
         width: 100%;
         /* Define a largura do item como 100% */
         height: 100%;
