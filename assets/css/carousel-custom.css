@@ -43,7 +43,7 @@
     }
 }
 
-.carousel-caption .arrow-icon {
+.arrow-icon {
     animation: bounce 2s infinite;
 }
 

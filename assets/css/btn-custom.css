@@ -22,14 +22,18 @@
 }
 
 .btn-text {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    padding: 10px;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 767px) {
