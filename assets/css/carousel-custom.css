@@ -1,5 +1,5 @@
 /* Estilos para carrossel em dispositivos móveis */
-@media (max-width: 767px) {
+@media (max-width: 992px) {
     .carousel {
         display: flex;
         flex-direction: column;

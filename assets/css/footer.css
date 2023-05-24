@@ -1,0 +1,22 @@
+.social,
+.whats,
+.contato {
+    width: auto;
+    align-items: center;
+}
+
+.footer-image-button {
+    width: 85%;
+}
+
+.footer {
+    background-color: red;
+    padding: 30px;
+}
+
+@media (max-width: 992px) {
+    .footer-image-button {
+        width: 100%;
+    }
+
+}

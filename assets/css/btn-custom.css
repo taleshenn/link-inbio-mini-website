@@ -1,8 +1,12 @@
+@import url(variables.css);
+
 .btn {
     position: relative;
     display: inline-block;
     overflow: hidden;
     padding: 0;
+    border: none;
+    border-radius: 0;
 }
 
 .btn::before {
@@ -36,8 +40,57 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 767px) {
+.scroll-button {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+
+
+.btn-primary {
+    color: var(--body-bkg);
+    background-color: var(--off-white);
+    padding: 1rem 2rem;
+    border-radius: 0;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--yellow-dark);
+    color: var(--body-bkg);
+    transition-duration: .3s;
+}
+
+.whats-button {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+}
+
+.image-button .hover {
+    display: none;
+}
+
+.image-button:hover .normal {
+    display: none;
+}
+
+.image-button:hover .hover {
+    display: inline-block;
+}
+
+
+
+@media (max-width: 992px) {
     .d-inline-flex.flex-wrap .btn {
+        width: 100%;
+    }
+
+    .whats-button {
         width: 100%;
     }
 }
