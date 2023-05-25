@@ -49,29 +49,30 @@
     cursor: pointer;
 }
 
-
-
-.btn-primary {
+.btn-light {
     color: var(--body-bkg);
     background-color: var(--off-white);
     padding: 1rem 2rem;
     border-radius: 0;
     border: none;
     text-transform: uppercase;
+    text-decoration: none;
+    opacity: 1;
 
 }
 
-.btn-primary:hover {
-    background-color: var(--yellow-dark);
-    color: var(--body-bkg);
-    transition-duration: .3s;
+.btn-light:hover {
+    background-color: white;
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+    animation: tremor 0.3s infinite;
 }
 
-.whats-button {
-    width: 85%;
-    display: flex;
-    justify-content: center;
+
+.btn-light:hover::before {
+    opacity: 0;
 }
+
 
 .image-button .hover {
     display: none;
@@ -85,7 +86,72 @@
     display: inline-block;
 }
 
+.whats-button {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
 
+.instagram,
+.youtube,
+.linkedin {
+    transition: all .2s ease-in-out;
+}
+
+.whats-button:hover,
+.instagram:hover,
+.youtube:hover,
+.linkedin:hover {
+    transform: scale(1.1);
+    animation: tremor 0.3s infinite;
+}
+
+
+@keyframes tremor {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-2px) rotate(-2deg);
+    }
+
+    40% {
+        transform: translateX(2px) rotate(2deg);
+    }
+
+    60% {
+        transform: translateX(-2px) rotate(-2deg);
+    }
+
+    80% {
+        transform: translateX(2px) rotate(2deg);
+    }
+
+    100% {
+        transform: translateX(0) rotate(0);
+    }
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.arrow_up {
+    animation: moveUpDown 1s infinite;
+}
 
 @media (max-width: 992px) {
     .d-inline-flex.flex-wrap .btn {

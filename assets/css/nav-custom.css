@@ -1,6 +1,9 @@
+@import url(variables.css);
+
 /* Posicionamento da navegação responsiva acima do carrossel */
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
     .navbar-custom {
+        box-sizing: border-box;
         position: fixed;
         top: 0;
         left: 0;
@@ -8,8 +11,16 @@
         z-index: 100;
     }
 
-    .carousel.carousel-custom {
-        margin-top: 56px;
-        /* Altura da navegação responsiva */
-    }
+}
+
+
+.nav-link:hover,
+.dropdown-item:hover,
+.nav-link:active {
+    color: var(--yellow-dark);
+}
+
+
+.navbar-toggler {
+    color: var(--bkg-dark);
 }

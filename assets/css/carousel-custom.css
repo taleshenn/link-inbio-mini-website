@@ -39,22 +39,26 @@
         width: 100%;
         /* Define a largura da imagem como 100% */
     }
-}
 
-.arrow-icon {
-    animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-    0% {
-        transform: translateY(0);
+    .carousel.carousel-custom {
+        margin-top: 56px;
+        /* Altura da navegação responsiva */
     }
 
-    50% {
-        transform: translateY(25px);
+    .arrow-icon {
+        animation: bounce 2s infinite;
     }
 
-    100% {
-        transform: translateY(0);
+    @keyframes bounce {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(25px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
     }
-}
