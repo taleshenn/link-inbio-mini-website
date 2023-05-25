@@ -168,9 +168,11 @@
     }
 }
 
-.arrow_up {
+.arrow_up,
+.arrow-icon {
     animation: moveUpDown 1s infinite;
 }
+
 
 @media (max-width: 992px) {
     .d-inline-flex.flex-wrap .btn {

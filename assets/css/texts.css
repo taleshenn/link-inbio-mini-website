@@ -88,7 +88,6 @@
     text-transform: uppercase;
 }
 
-
 .arrow-icon,
 #photo,
 #retoucher {
@@ -101,27 +100,27 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     font-weight: 700;
     color: var(--off-white);
+    z-index: 99;
 }
-
 
 #photo {
     font-size: 5rem;
     opacity: .5;
-    top: 70%;
+    top: 85%;
     left: 50%;
 }
 
 #retoucher {
     font-size: 2.9rem;
     text-transform: uppercase;
-    top: 75%;
+    top: 90%;
     left: 50%;
     color: var(--yellow-pale);
 }
 
 .arrow-icon {
     font-size: 2.5rem;
-    top: 75%;
+    top: 70%;
     left: 50%;
 }
 
