@@ -6,9 +6,6 @@ body {
     margin: 0;
 }
 
-/* 
-.footer-card-body {
-    background: none;
-    color: var(--off-white);
-    padding: 30px;
-} */
+* {
+    box-sizing: border-box;
+}
