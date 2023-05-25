@@ -1,11 +1,28 @@
 @import url(variables.css);
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: var(--body-bkg);
     padding: 0;
     margin: 0;
 }
 
-* {
-    box-sizing: border-box;
+.card,
+.card-header,
+.card-body,
+.card-footer {
+    background: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.destaque {
+    background-color: var(--yellow-dark);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
