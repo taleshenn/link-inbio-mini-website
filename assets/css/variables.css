@@ -2,5 +2,9 @@
     --yellow-pale: #ffdf50;
     --yellow-dark: #FFBF00;
     --body-bkg: #282828;
+    --body-bkg-dark: #999999;
+    --body-bkg-light: #CCCCCC;
+    --body-bkg-darker: #666666;
+    --body-bkg-lighter: #DDDDDD;
     --off-white: #ebebeb;
 }

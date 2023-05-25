@@ -1,8 +1,13 @@
+@import url(variables.css);
+
 .btn {
     position: relative;
     display: inline-block;
     overflow: hidden;
     padding: 0;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
 }
 
 .btn::before {
@@ -17,23 +22,164 @@
     transition: opacity 0.3s ease-in-out;
 }
 
+.btn-content {
+    position: relative;
+    z-index: 1;
+}
+
 .btn:hover::before {
     opacity: 1;
+    z-index: 2;
+}
+
+.btn-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 3;
 }
 
 .btn-text {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    padding: 10px;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 4;
+
 }
 
-@media (max-width: 767px) {
+.scroll-button {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.btn-light {
+    color: var(--body-bkg);
+    background-color: var(--off-white);
+    padding: 1rem 2rem;
+    border-radius: 0;
+    border: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    opacity: 1;
+
+}
+
+.btn-light:hover {
+    background-color: white;
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+    animation: tremor 0.3s infinite;
+}
+
+
+.btn-light:hover::before {
+    opacity: 0;
+}
+
+
+.image-button .hover {
+    display: none;
+}
+
+.image-button:hover .normal {
+    display: none;
+}
+
+.image-button:hover .hover {
+    display: inline-block;
+}
+
+.whats-button {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.instagram,
+.youtube,
+.linkedin {
+    transition: all .2s ease-in-out;
+}
+
+.whats-button:hover,
+.instagram:hover,
+.youtube:hover,
+.linkedin:hover {
+    transform: scale(1.1);
+    animation: tremor 0.3s infinite;
+}
+
+
+@keyframes tremor {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-2px) rotate(-2deg);
+    }
+
+    40% {
+        transform: translateX(2px) rotate(2deg);
+    }
+
+    60% {
+        transform: translateX(-2px) rotate(-2deg);
+    }
+
+    80% {
+        transform: translateX(2px) rotate(2deg);
+    }
+
+    100% {
+        transform: translateX(0) rotate(0);
+    }
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.arrow_up,
+.arrow-icon {
+    animation: moveUpDown 1s infinite;
+}
+
+
+@media (max-width: 992px) {
     .d-inline-flex.flex-wrap .btn {
+        width: 100%;
+    }
+
+    .whats-button {
         width: 100%;
     }
 }
